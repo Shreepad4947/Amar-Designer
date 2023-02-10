@@ -124,18 +124,18 @@ abstract class PageRoutes {
 
 abstract class _Paths {
   static const MAIN = '/main';
-  static const HOME = '/home';
-  static const SIGNIN = '/signIn';
-  static const SIGNUP = '/signUp';
-  static const PROFILE = '/profile';
-  static const COOSEUSER = '/chooseUser';
-  static const RESETPASSWORD = '/resetPassward';
-  static const DESIGNIDEAS1 = '/designIdeas1';
-  static const DESIGNIDEAS2 = '/designIdeas2';
-  static const ADDYOUPROJECTS = '/addYourProjects';
-  static const BUSINESSDETAILS = '/businessDetails';
-  static const EDITINFORMATION = '/editInformation';
-  static const EDITINFORMATION2 = '/editInformation2';
+  static const HOME = '/home'; //
+  static const SIGNIN = '/signIn';//
+  static const SIGNUP = '/signUp';//
+  static const PROFILE = '/profile';//
+  static const COOSEUSER = '/chooseUser';//
+  static const RESETPASSWORD = '/resetPassward';//
+  static const DESIGNIDEAS1 = '/designIdeas1';//
+  static const DESIGNIDEAS2 = '/designIdeas2';//
+  static const ADDYOUPROJECTS = '/addYourProjects';//
+  static const BUSINESSDETAILS = '/businessDetails';//
+  static const EDITINFORMATION = '/editInformation';//
+  static const EDITINFORMATION2 = '/editInformation2';//
   static const UPLOADCONTENT = '/uploadContent';
   static const PROFILEOWNER = '/ProfileOwner';
 }

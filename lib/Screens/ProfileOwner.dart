@@ -27,6 +27,7 @@ class _ProfileOwnerState extends State<ProfileOwner> {
             children: [
               Column(
                 children: [
+
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
@@ -38,8 +39,101 @@ class _ProfileOwnerState extends State<ProfileOwner> {
                     child: 
                   Image.asset("image/Capture3.PNG"),),
                 ),
+              ),
+              
+              Positioned(right:0,
+                child: Container(child:
+                Container(color:Colors.amber,
+                  child: Row(
+                        children: [
+                          Padding(
+                  padding: const EdgeInsets.only(left:10.0),
+                  child: Container(
+                    width:60,
+                    color:Colors.blue, 
+                  child: Text("User Name")),
+                ),
+                          TextButton(
+                            onPressed: () { },
+                            child: Container(
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(6),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                          color: Colors.grey,
+                                          blurRadius: 2.0,
+                                          spreadRadius: 2,
+                                          offset: Offset(
+                                            2,
+                                            2,
+                                          )),
+                                    ],
+                                    color: Color.fromARGB(255, 246, 6, 86)),
+                                height: 40,
+                                width: width * 0.1,
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const [
+                                    Icon(Icons.edit,
+                                        color: Colors.white),
+                                    Text(
+                                      "Edit",
+                                      style: TextStyle(color: Colors.white),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ],
+                                )),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 50),
+                            child: TextButton(
+                              onPressed: () {},
+                              child: Container(
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                      boxShadow: const [
+                                        BoxShadow(
+                                            color: Colors.grey,
+                                            blurRadius: 2.0,
+                                            spreadRadius: 2,
+                                            offset: Offset(
+                                              2,
+                                              2,
+                                            )),
+                                      ],
+                                      borderRadius: BorderRadius.circular(6),
+                                      color: Color.fromARGB(255, 246, 6, 86)),
+                                  width: width * 0.2,
+                                  height: 40,
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: const [
+                                      Icon(Icons.remove_red_eye_outlined,
+                                          color: Colors.white),
+                                      Text(
+                                        "preview public profile",
+                                        style: TextStyle(color: Colors.white ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                        ],
+                      ),
+                )),
               )
-            ],),
+                        ],),
+
             Positioned(
               top:height*0.15 ,
               left:4,

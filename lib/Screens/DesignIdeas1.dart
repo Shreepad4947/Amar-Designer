@@ -29,7 +29,8 @@ class _DesignIdeas1State extends State<DesignIdeas1> {
         itemBuilder: (context, index) {
           return Container(
                   width:width*0.25,
-            margin: const EdgeInsets.all(30),
+                  // height:height*0.33,
+            margin: const EdgeInsets.all(15),
             decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(
@@ -57,7 +58,7 @@ class _DesignIdeas1State extends State<DesignIdeas1> {
                 ),
 
                 const SizedBox(
-                  height: 20,
+                  height: 6,
                 ),
 
                 Padding(
@@ -71,7 +72,7 @@ class _DesignIdeas1State extends State<DesignIdeas1> {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                            fontSize: 18,
+                            fontSize: 12,
                             fontWeight: FontWeight.bold,
                             color:Colors.black,
                             decoration: TextDecoration.none
@@ -79,19 +80,19 @@ class _DesignIdeas1State extends State<DesignIdeas1> {
                         ),
                       ),
                       const SizedBox(
-                    height: 5,
+                    height: 4,
                   ),
                   Row(
                     children: [
                       const Icon(Icons.grid_view_outlined,color: Color.fromARGB(255, 246, 6, 86,)),
                       const SizedBox(
-                    width: 4,
+                    // width: 1,
                   ),
                       Text(
                         productList[index]['Designs'],
                         style: const TextStyle(
                           fontWeight: FontWeight.w700,
-                          fontSize: 14,
+                          fontSize: 12,
                           color:Color.fromARGB(255, 246, 6, 86,),
                           decoration: TextDecoration.none
                         ),
