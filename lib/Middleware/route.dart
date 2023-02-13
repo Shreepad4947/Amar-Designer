@@ -6,12 +6,15 @@ import 'package:amardesigner/Login/signIn.dart';
 import 'package:amardesigner/Login/signUp.dart';
 import 'package:amardesigner/MainScreen.dart';
 import 'package:amardesigner/Middleware/middleware.dart';
+import 'package:amardesigner/Screens/AboutUs.dart';
 import 'package:amardesigner/Screens/BusinessDetailsPageStepTwoAmar.dart';
 import 'package:amardesigner/Screens/DesignIdeas1.dart';
 import 'package:amardesigner/Screens/DesignIdeas2.dart';
 import 'package:amardesigner/Screens/EditPhotoInformation.dart';
 import 'package:amardesigner/Screens/EditPhotoInformation2.dart';
+import 'package:amardesigner/Screens/PostLog.dart';
 import 'package:amardesigner/Screens/ProfileOwner.dart';
+import 'package:amardesigner/Screens/SearchPage.dart';
 import 'package:amardesigner/Screens/UploadContent.dart';
 import 'package:amardesigner/Screens/addYourProject.dart';
 import 'package:amardesigner/controllers/HomeControlers.dart';
@@ -35,6 +38,9 @@ class Routes {
   static String getEditPhoto2PagedRoute() => _Paths.EDITINFORMATION2;
   static String getUploadContentPagedRoute() => _Paths.UPLOADCONTENT;
   static String getProfileOwnerRoute() => _Paths.PROFILEOWNER;
+  static String getSearchScreenRoute() => _Paths.SEARCHSCREEN;
+  static String getPostLogRoute() => _Paths.POSTLOG;
+  static String getAboutUsRoute() => _Paths.ABOUTUS;
 
   static List<GetPage> routes = [
     GetPage(
@@ -97,7 +103,20 @@ class Routes {
 
     GetPage(
       page: () => const ProfileOwner(), 
-      name: _Paths.PROFILEOWNER),   
+      name: _Paths.PROFILEOWNER),
+      
+    GetPage(
+      page: () => const SearchScreen(), 
+      name: _Paths.SEARCHSCREEN),  
+
+    GetPage(
+      page: () => const PostLog(), 
+      name: _Paths.POSTLOG), 
+
+    GetPage(
+      page: () => const AboutUs(), 
+      name: _Paths.ABOUTUS),   
+  
 
   ];
 }
@@ -120,22 +139,28 @@ abstract class PageRoutes {
   static const EDITINFORMATION2 = _Paths.EDITINFORMATION2;
   static const UPLOADCONTENT = _Paths.UPLOADCONTENT;
   static const PROFILEOWNER = _Paths.PROFILEOWNER;
+  static const SEARCHSCREEN = _Paths.SEARCHSCREEN;
+  static const POSTLOG = _Paths.POSTLOG;
+  static const ABOUTUS = _Paths.ABOUTUS;
 }
 
 abstract class _Paths {
   static const MAIN = '/main';
-  static const HOME = '/home'; //
-  static const SIGNIN = '/signIn';//
-  static const SIGNUP = '/signUp';//
-  static const PROFILE = '/profile';//
-  static const COOSEUSER = '/chooseUser';//
-  static const RESETPASSWORD = '/resetPassward';//
-  static const DESIGNIDEAS1 = '/designIdeas1';//
-  static const DESIGNIDEAS2 = '/designIdeas2';//
-  static const ADDYOUPROJECTS = '/addYourProjects';//
-  static const BUSINESSDETAILS = '/businessDetails';//
-  static const EDITINFORMATION = '/editInformation';//
-  static const EDITINFORMATION2 = '/editInformation2';//
+  static const HOME = '/home'; 
+  static const SIGNIN = '/signIn';
+  static const SIGNUP = '/signUp';
+  static const PROFILE = '/profile';
+  static const COOSEUSER = '/chooseUser';
+  static const RESETPASSWORD = '/resetPassward';
+  static const DESIGNIDEAS1 = '/designIdeas1';
+  static const DESIGNIDEAS2 = '/designIdeas2';
+  static const ADDYOUPROJECTS = '/addYourProjects';
+  static const BUSINESSDETAILS = '/businessDetails';
+  static const EDITINFORMATION = '/editInformation';
+  static const EDITINFORMATION2 = '/editInformation2';
   static const UPLOADCONTENT = '/uploadContent';
   static const PROFILEOWNER = '/ProfileOwner';
+  static const SEARCHSCREEN = '/SearchScreen';
+  static const POSTLOG = '/PostLog';
+  static const ABOUTUS = '/AboutUs';
 }

@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         Column(children: [
           SizedBox(
-          height: height*0.15,
+          height: height*0.2,
         ),
         const Align(
           alignment: Alignment.centerLeft,
@@ -151,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   return OnHowerButton(builder: (isHovered) {
                     final color = isHovered ? Colors.grey[400] : Colors.white;
                     return Container(
-                      margin: EdgeInsets.all(30),
+                      margin: EdgeInsets.all(15),
                       width: width * 0.25,
                       decoration: BoxDecoration(
                         borderRadius: const BorderRadius.only(

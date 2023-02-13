@@ -184,13 +184,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                     children: [
                       ...category.map(
                         (index) => Expanded(
-                          // child:
-                          // GestureDetector(
-                          //   onTap: () {
-                          //     setState(() {
-                          //       selectedIndex = category.indexOf(index);
-                          //     });
-                          //   },
+                          child:
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                selectedIndex = category.indexOf(index);
+                              });
+                            },
+
                           child: OnHowerButton(builder: (isHovered) {
                             isHovered
                                 ? selectedIndex = category.indexOf(index)
@@ -215,8 +216,9 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ],
                               ),
                             );
-                          }),
-                          // ),
+                          }
+                          ),
+                          ),
                         ),
                       ),
                     ],
