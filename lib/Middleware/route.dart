@@ -6,7 +6,7 @@ import 'package:amardesigner/Login/signIn.dart';
 import 'package:amardesigner/Login/signUp.dart';
 import 'package:amardesigner/MainScreen.dart';
 import 'package:amardesigner/Middleware/middleware.dart';
-import 'package:amardesigner/Screens/AboutUs.dart';
+import 'package:amardesigner/Screens/StaticPages/AboutUs.dart';
 import 'package:amardesigner/Screens/BusinessDetailsPageStepTwoAmar.dart';
 import 'package:amardesigner/Screens/DesignIdeas1.dart';
 import 'package:amardesigner/Screens/DesignIdeas2.dart';
@@ -15,6 +15,10 @@ import 'package:amardesigner/Screens/EditPhotoInformation2.dart';
 import 'package:amardesigner/Screens/PostLog.dart';
 import 'package:amardesigner/Screens/ProfileOwner.dart';
 import 'package:amardesigner/Screens/SearchPage.dart';
+import 'package:amardesigner/Screens/StaticPages/ContactUs.dart';
+import 'package:amardesigner/Screens/StaticPages/OurServices.dart';
+import 'package:amardesigner/Screens/StaticPages/PrivacyPolicy.dart';
+import 'package:amardesigner/Screens/StaticPages/TermsCondition.dart';
 import 'package:amardesigner/Screens/UploadContent.dart';
 import 'package:amardesigner/Screens/addYourProject.dart';
 import 'package:amardesigner/controllers/HomeControlers.dart';
@@ -41,6 +45,10 @@ class Routes {
   static String getSearchScreenRoute() => _Paths.SEARCHSCREEN;
   static String getPostLogRoute() => _Paths.POSTLOG;
   static String getAboutUsRoute() => _Paths.ABOUTUS;
+  static String getOurServicesRoute() => _Paths.OURSERVICES;
+  static String getPrivacyPolicyRoute() => _Paths.PRIVACYPOLICY;
+  static String getTermsConditionRoute() => _Paths.TERMSCONDITION;
+  static String getContactUsRoute() => _Paths.CONTACTUS;
 
   static List<GetPage> routes = [
     GetPage(
@@ -116,6 +124,22 @@ class Routes {
     GetPage(
       page: () => const AboutUs(), 
       name: _Paths.ABOUTUS),   
+
+    GetPage(
+      page: () => const OurServices(), 
+      name: _Paths.OURSERVICES), 
+
+    GetPage(
+      page: () => const PrivacyPolicy(), 
+      name: _Paths.PRIVACYPOLICY),
+
+    GetPage(
+      page: () => const TermsCondition(), 
+      name: _Paths.TERMSCONDITION),   
+
+    GetPage(
+      page: () => const ContactUs(), 
+      name: _Paths.CONTACTUS),    
   
 
   ];
@@ -142,6 +166,10 @@ abstract class PageRoutes {
   static const SEARCHSCREEN = _Paths.SEARCHSCREEN;
   static const POSTLOG = _Paths.POSTLOG;
   static const ABOUTUS = _Paths.ABOUTUS;
+  static const OURSERVICES = _Paths.OURSERVICES;
+  static const PRIVACYPOLICY = _Paths.PRIVACYPOLICY;
+  static const TERMSCONDITION = _Paths.TERMSCONDITION;
+  static const CONTACTUS = _Paths.CONTACTUS;
 }
 
 abstract class _Paths {
@@ -163,4 +191,8 @@ abstract class _Paths {
   static const SEARCHSCREEN = '/SearchScreen';
   static const POSTLOG = '/PostLog';
   static const ABOUTUS = '/AboutUs';
+  static const OURSERVICES = '/OurServices';
+  static const PRIVACYPOLICY = '/PrivacyPolicy';
+  static const TERMSCONDITION = '/TermsCondition';
+  static const CONTACTUS = '/ContactUs';
 }
